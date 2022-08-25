@@ -30,6 +30,8 @@ ApplicationWindow {
         anchors.fill: parent
 
         AllWordsList {
+            focus: true
+
             model: wordsModel
         }
     }
