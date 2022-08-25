@@ -22,4 +22,6 @@ qt_add_qml_module(nwo
         AllWordsList.qml
         main.qml
         RandomWord.qml
+        qml-utils/JSONListModel/JSONListModel.qml
+        qml-utils/JSONListModel/jsonpath.js
 )
