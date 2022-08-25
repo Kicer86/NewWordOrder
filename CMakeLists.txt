@@ -18,5 +18,7 @@ target_link_libraries(nwo PRIVATE Qt6::Gui Qt6::Quick)
 qt_add_qml_module(nwo
     URI main
     VERSION 1.0
-    QML_FILES main.qml
+    QML_FILES
+        AllWordsList.qml
+        main.qml
 )
