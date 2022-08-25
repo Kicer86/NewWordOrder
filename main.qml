@@ -7,21 +7,14 @@ ApplicationWindow {
 
     visible: true
 
-    ListModel {
+    JSONListModel {
         id: wordsModel
-
-        ListElement {
-            word: "aaaa"
-            meaning: "aaa a a aaaa"
-        }
-        ListElement {
-            word: "bbbb"
-            meaning: "bbbb b b bbb bb"
-        }
-        ListElement {
-            word: "cccc"
-            meaning: "cc c ccc cc cc"
-        }
+        json: '[ \
+           {"word": "aaa", "meaning": "aa a a a a a"}, \
+           {"word": "bbb", "meaning": "bb bb bb b  nbbbb"}, \
+           {"word": "ccc", "meaning": "cc c  c ccc c c"}, \
+           {"word": "ddd", "meaning": "dddd d d dd ddd dddd"} \
+       ]'
     }
 
     SwipeView {
@@ -30,13 +23,13 @@ ApplicationWindow {
         anchors.fill: parent
 
         RandomWord {
-            model: wordsModel
+            model: wordsModel.model
         }
 
         AllWordsList {
             focus: true
 
-            model: wordsModel
+            model: wordsModel.model
         }
     }
 
