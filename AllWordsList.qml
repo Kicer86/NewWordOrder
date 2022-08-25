@@ -4,8 +4,6 @@ import QtQuick
 
 ListView {
     id: listId
-    anchors.fill: parent
-    focus: true
 
     delegate: Rectangle {
         id: delegateId
@@ -17,7 +15,8 @@ ListView {
         height: ListView.isCurrentItem ? wordSectionId.height: headerId.height
         clip: true
 
-        border.color: "red"
+        border.color: "grey"
+        color: "white"
         radius: 5
 
         Behavior on height {
