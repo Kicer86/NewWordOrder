@@ -24,8 +24,22 @@ ApplicationWindow {
         }
     }
 
-    AllWordsList {
-        model: wordsModel
+    SwipeView {
+        id: swipeView
+
+        anchors.fill: parent
+
+        AllWordsList {
+            model: wordsModel
+        }
+    }
+
+    PageIndicator {
+        currentIndex: swipeView.currentIndex
+        count: swipeView.count
+
+        anchors.bottom: swipeView.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 }
 
