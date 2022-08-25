@@ -1,0 +1,3 @@
+[submodule "qml-utils"]
+	path = qml-utils
+	url = https://github.com/kromain/qml-utils.git
