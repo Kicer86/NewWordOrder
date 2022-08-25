@@ -29,6 +29,9 @@ ApplicationWindow {
 
         anchors.fill: parent
 
+        RandomWord {
+        }
+
         AllWordsList {
             focus: true
 

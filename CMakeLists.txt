@@ -21,4 +21,5 @@ qt_add_qml_module(nwo
     QML_FILES
         AllWordsList.qml
         main.qml
+        RandomWord.qml
 )
