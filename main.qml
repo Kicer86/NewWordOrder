@@ -30,6 +30,7 @@ ApplicationWindow {
         anchors.fill: parent
 
         RandomWord {
+            model: wordsModel
         }
 
         AllWordsList {
